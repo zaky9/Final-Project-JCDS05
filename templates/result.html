@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pass or Fail Prediction</title>
+        <style>
+                body {
+                    background-image: url("https://www.renweb.com/wp-content/uploads/home-banner-4.jpg");
+                    background-size: 1300px 620px
+                    }
+                div.form {
+                    display: block;
+                    text-align: center;
+                    }
+                form {
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align:justify;
+                    }
+            </style>
+         <!-- Required meta tags -->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <center>
+        <br><br><br>
+        <h3 style="background-color: whitesmoke; width:510px; padding: 20px 0px; 
+        border: 5px solid black; text-align:center; opacity:0.9">
+        <p style="color:black ; font-size:30px; text-align: center" >Pass or Fail Prediction</p>
+        <p style="font-size: 20px">Mothers education:</p> <p style="font-size: 18px; text-align: center"><b>{{ result.Medu}}</b></p>
+        <p style="font-size: 20px">Faters education:</p> <p style="font-size: 18px; text-align: center"> <b>{{ result.Fedu}}</b></p>
+        <p style="font-size: 20px">Mothers job:</p> <p style="font-size: 18px; text-align: center"> <b>{{ result.Mjob}}</b></p>
+        <p style="font-size: 20px">Willing to further study:</p> <p style="font-size: 18px; text-align: center"><b>{{ result.higher}}</b></p>
+        <p style="font-size: 20px">Weekly spent studying:</p> <p style="font-size: 18px; text-align: center"> <b>{{ result.studytime}}</b></p>
+        <p style="font-size: 20px">Travel time taken to school:</p> <p style="font-size: 18px; text-align: center"><b>{{ result.address}}</b> </p>
+        <p style="font-size: 20px">Number of previously failing test:</p> <p style="font-size: 18px; text-align: center"><b>{{ result.failures}}</b></p>
+        <p style="font-size: 20px">Weekly alcohol consumption:</p> <p style="font-size: 18px; text-align: center"><b>{{ result.Dalc}}</b> </p>
+        <p style="font-size: 20px">Number of previously absent:</p> <p style="font-size: 18px; text-align: center"> <b>{{ result.absences}}</b></p>
+        <br><br>
+        <p style="font-size: 20px; text-align:center">Based on the dataset you are likely to:</p>
+        <p style="color:brown; font-size:30px; text-align:center"><b>{{ result.conclusion}}</b></p>
+        </center>
+        <center>
+        <a href="http://localhost:5000/">
+            <button>BACK TO HOMEPAGE</button>
+        </center>
+        </a>
+    </body>
+    </html>
