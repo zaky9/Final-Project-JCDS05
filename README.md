@@ -8,9 +8,8 @@ This data approach student achievement in secondary education of two Portuguese 
 Dataset source: https://archive.ics.uci.edu/ml/datasets/Student+Performance
 
 ## Objective
-The objective of this project is to predict what features that have impactful meaning towards predicting the grade of a student. 
-These features are collected from demographic, social and school by using school reports and questionnaires. 
-By knowing features that can affect to the student's grade or performance may allow us to imporve the education system.
+The objective of this project is to predict which features (or attributes) that may have impactful meaning towards predicting grade of a student. These features are collected from demographic, social and school by using school reports and questionnaires. 
+Acknowledging the important features that can affect student's grade or performance enable us to know in which sectors that can be improved or neglected towards making a better educational system.
 
 ## Features Information
 1. school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira) 
@@ -41,7 +40,7 @@ By knowing features that can affect to the student's grade or performance may al
 26. goout - going out with friends (numeric: from 1 - very low to 5 - very high) 
 27. Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high) 
 28. Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high) 
-29.health - current health status (numeric: from 1 - very bad to 5 - very good) 
+29. health - current health status (numeric: from 1 - very bad to 5 - very good) 
 30. absences - number of school absences (numeric: from 0 to 93) 
 
 ### these grades are related with the course subject, Math or Portuguese: 
@@ -55,8 +54,8 @@ By knowing features that can affect to the student's grade or performance may al
 ### Result page
 ![](screenshots/result.PNG)
 
-Based on the correlation between the student grades and other attributes, there are only few features that can be correlated with the student grades.
-there are positive and negative correlation when correlating with the average of student score (AvgGrade). Positive correlation features such as: 
+Based on the dataset and correlation between the student's grades and other attributes (features), there are only few features that has good correlation with the student grades (+- 0.1)
+There are positive and negative correlation when comparing with the average of student score (AvgGrade). Positive correlation features such as: 
 - parent's education and their job (Medu,Fedu, Mjob, Fjob)
 - student's enthusiasm to proceed higher degree of studying (higher)
 - the amount of student spending their time for studying (studytime)
@@ -68,5 +67,4 @@ conversely, negative correlation features such as:
 - The number of absence that the student missed (absences)
 - The travel time between the student's house to school
 
-acknowledging features that can impact the student's grades in positive or negative way,it may allow us to improve the educational system by knowing the important features. there are few limitation of the datasets. features that can be related to the student'sperformance may not be available in this dataset. in the future study, a new reports and questionnaire can be distibuted toward a bigger audience, so that we can get a better distribution of the studies.
-
+These features are the input of the Machine Learning. Standard Vector Machine (SVM) Algorithm is used for this project to predict whether the student will fail or pass their future exam if they have the attibutes that they inseted.
